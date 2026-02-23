@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | My Website</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      align-items: center;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url("images/BACKGROUND.png") no-repeat center center/cover;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 0.5rem 0 0.2rem;
+      cursor: pointer;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      padding: 0.7rem;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      outline: none;
+      transition: background-color 0.3s;
+    }
+
+    input[type="email"]:hover,
+    input[type="password"]:hover {
+      background-color: burlywood;
+    }
+
+    input[type="email"]:active,
+    input[type="password"]:active {
+      background-color: rgb(163, 220, 72);
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .checkbox input {
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+
+    .links {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .links a {
+      color: lightblue;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #ffcc70;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    button,
+    input[type="submit"] {
+      flex: 1;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: white;
+    }
+
+    button {
+      background-color: brown;
+    }
+
+    button:hover {
+      background-color: #a0522d;
+    }
+
+    input[type="submit"] {
+      background-color: rgb(66, 126, 66);
+    }
+
+    input[type="submit"]:hover {
+      background-color: #4caf50;
+    }
+
+    button:active,
+    input[type="submit"]:active {
+      background-color: chocolate;
+    }
+
+    button a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Log In</h1>
+    <p>Please log in to become a part of the family</p>
+
+    <form action="home.html" method="post">
+      <label for="email">Enter Email:</label>
+      <input type="email" id="email" name="email" placeholder="abc@mail.com" required>
+
+      <label for="password">Enter Password:</label>
+      <input type="password" id="password" name="password" placeholder="password" required>
+
+      <div class="checkbox">
+        <input type="checkbox" id="cb" name="remember">
+        <label for="cb">Remember my credentials</label>
+      </div>
+
+      <div class="links">
+        <a href="signin.html">New User? Sign Up</a>
+      </div>
+
+      <div class="buttons">
+        <button type="button"><a href="home.html">Back</a></button>
+        <input type="submit" value="Submit" id="SUBMIT">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
